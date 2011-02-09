@@ -21,7 +21,8 @@ checksums           md5     a5a381db446e017f172bf6b003a4fed9 \
                     sha1    b6b6501fe3f53a2ddce0f235e3d6a9f66cbac2b6 \
                     rmd160  8c4263b0d4ff47732314f0c163c7c736cb2654c7
 
-depends_lib         port:libevent port:zmq port:msgpack
+depends_lib         port:mecab port:mecab-ipadic-utf8 port:mecab-jumandic-utf8 \
+                    port:libevent port:zmq port:msgpack
 
 livecheck.check     regex
 livecheck.url       http://groonga.org/download/
