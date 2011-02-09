@@ -1,0 +1,29 @@
+PortSystem          1.0
+name                groonga
+version             1.1.0
+categories          databases
+maintainers         kou@clear-code.com
+description         An embeddable fulltext search engine
+long_description \
+   groonga is an embeddable fulltext search engine library. It can integrate \
+   with DBMS and scripting languages to enhance their search functionality. \
+   It also provides a standalone data store server based on relation data \
+   model.
+
+platforms           darwin
+license             LGPLv2
+
+homepage            http://groonga.org/
+distname            groonga-${version}
+worksrcdir          ${distname}
+
+checksums           md5     a5a381db446e017f172bf6b003a4fed9 \
+                    sha1    b6b6501fe3f53a2ddce0f235e3d6a9f66cbac2b6 \
+                    rmd160  8c4263b0d4ff47732314f0c163c7c736cb2654c7
+
+depends_lib         port:libevent port:zmq port:msgpack
+
+livecheck.check     regex
+livecheck.url       http://groonga.org/download/
+livecheck.regex     {groonga-([0-9.-]+)\.tar\.gz}
+
