@@ -14,6 +14,7 @@ platforms           darwin
 license             LGPLv2
 
 homepage            http://groonga.org/
+master_sites        http://groonga.org/files/groonga/
 distname            groonga-${version}
 worksrcdir          ${distname}
 
