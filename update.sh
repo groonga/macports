@@ -14,7 +14,7 @@ portfile=databases/groonga/Portfile
 
 sed -E -i'' -e "s/^(version +)[a-z0-9.\-]+/\1$version/" $portfile
 
-curl -o $tar_gz -L http://groonga.org/files/groonga/$tar_gz
+curl -o $tar_gz -L http://packages.groonga.org/source/groonga/$tar_gz
 
 for type in md5 sha1 rmd160; do
         hash=$(openssl dgst -$type $tar_gz | cut -f 2 -d ' ')
