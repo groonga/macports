@@ -14,7 +14,7 @@ platforms           darwin
 license             LGPLv2
 
 homepage            http://groonga.org/
-master_sites        http://groonga.org/files/groonga/
+master_sites        http://packages.groonga.org/source/groonga/
 distname            groonga-${version}
 worksrcdir          ${distname}
 
@@ -26,6 +26,6 @@ depends_lib         port:mecab port:mecab-ipadic-utf8 port:mecab-jumandic-utf8 \
                     port:libevent port:zmq port:msgpack
 
 livecheck.check     regex
-livecheck.url       http://groonga.org/download/
+livecheck.url       http://packages.groonga.org/source/groonga/
 livecheck.regex     {groonga-([0-9.-]+)\.tar\.gz}
 
