@@ -1,6 +1,6 @@
 PortSystem          1.0
 name                groonga
-version             1.2.6
+version             1.2.7
 categories          databases
 maintainers         kou@clear-code.com
 description         An embeddable fulltext search engine
@@ -18,9 +18,9 @@ master_sites        http://packages.groonga.org/source/groonga/
 distname            groonga-${version}
 worksrcdir          ${distname}
 
-checksums           md5     21bc2f043304837717d3aacdf4118c7a \
-                    sha1    548e416159c8097119db2b183eca73fd02e23e3d \
-                    rmd160  2cf2ac935ee5eca298bc1938b0b78cc0d8669c8c
+checksums           md5     ef83d94b8e602507b068f3f6d5cf8e92 \
+                    sha1    1c2cd08912ad6e72a8f0d937e3811f73fffc23b5 \
+                    rmd160  eff61fe0254304bdcf611552226c19e7bcfe96b6
 
 depends_lib         port:mecab port:mecab-ipadic-utf8 port:mecab-jumandic-utf8 \
                     port:libevent port:zmq port:msgpack
